@@ -1,5 +1,5 @@
 ORG 00H
-;Main Program
+;mmain Program
 BACK: 	MOV A, #0FFH
 		MOV P2, A
 		ACALL DELAY
@@ -15,7 +15,6 @@ LINE2:	MOV R0, #255
 LINE3:	DJNZ R0, LINE3
 		DJNZ R1, LINE2
 		DJNZ R2, LINE1
-		RET
-		
+		RET	
 		END
 		
